@@ -3,7 +3,7 @@ CREATE TABLE GymMember (
     ID INT PRIMARY KEY NOT NULL,
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50) NOT NULL,
-    BirthDate VARCHAR(50),
+    BirthDate DATE,
     Gender VARCHAR(10),
     Phone VARCHAR(15),
     Email VARCHAR(100),
