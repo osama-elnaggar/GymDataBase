@@ -20,25 +20,18 @@ CREATE TABLE Payments (
     FOREIGN KEY (GymMemberID) REFERENCES GymMember(ID)
 );
 
--- Create Trainer table
-CREATE TABLE Trainer (
+-- Create User(Trainer,Admin) table
+CREATE TABLE User (
     ID INT PRIMARY KEY NOT NULL,
     FirstName VARCHAR(50),
     LastName VARCHAR(50),
     Gender VARCHAR(10),
     Experience VARCHAR(100),
+     Role VARCHAR(50),
     Phone VARCHAR(15),
     Email VARCHAR(100)
 );
 
--- Create Administration table
-CREATE TABLE Administration (
-    ID INT PRIMARY KEY NOT NULL,
-    FirstName VARCHAR(50),
-    LastName VARCHAR(50),
-    Role VARCHAR(50),
-    Email VARCHAR(100)
-);
 
 -- Create Class table
 CREATE TABLE Class (
