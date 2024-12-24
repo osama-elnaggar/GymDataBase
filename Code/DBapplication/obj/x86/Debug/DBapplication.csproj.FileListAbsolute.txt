@@ -45,3 +45,4 @@ C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\D
 C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.pdb
 C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.SignUp.resources
 C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.GymTrainerSignup.resources
+C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.GymMember.resources

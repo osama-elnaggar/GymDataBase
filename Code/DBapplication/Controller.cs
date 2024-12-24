@@ -16,21 +16,21 @@ namespace DBapplication
             dbMan = new DBManager();
         }
 
+
       
         public void TerminateConnection()
         {
             dbMan.CloseConnection();
         }
        
-        public int GymMemberSignup(int ID, string FirstName,string LastName,string BDate,
-            string Gender,string phone,string email,
-            string payment_history,string MembershipStatus )
+        public DataTable CheckCreedentials(string UserName,string Password)
         {
-            string query = $"INSERT INTO GymMember(ID,FirstName,LastName,BirthDate,Gender,Phone,Email,PaymentHistory,MembershipStatus)" +
-                $" VALUES({ID},'{FirstName}','{LastName}','{BDate}'," +
-                $"'{Gender}','{phone}','{email}','{payment_history}','{MembershipStatus}')";
-            return (dbMan.ExecuteNonQuery( query ));
+
+            string query = $"SELECT * FROM GymMember WHERE UserName = '{UserName}' AND Password = '{Password}' ";
+
+            return dbMan.ExecuteReader(query);
         }
+
       
     }
 }

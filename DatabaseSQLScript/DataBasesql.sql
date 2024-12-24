@@ -1,8 +1,8 @@
 -- Create Gym Member table
 CREATE TABLE GymMember (
-    ID INT PRIMARY KEY NOT NULL,
-    FirstName VARCHAR(50) NOT NULL,
-    LastName VARCHAR(50) NOT NULL,
+    ID INT IDENTITY(1,1) PRIMARY KEY NOT NULL ,
+    UserName VARCHAR(50) NOT NULL UNIQUE ,
+    Password VARCHAR(50) NOT NULL,
     BirthDate DATE,
     Gender VARCHAR(10) NOT NULL,
     Phone VARCHAR(15) NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE GymMember (
 );
 
 -- Create User(Trainer,Admin) table
-CREATE TABLE User (
+CREATE TABLE "User" (
     ID INT PRIMARY KEY NOT NULL,
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50) NOT NULL,
@@ -20,9 +20,9 @@ CREATE TABLE User (
     Experience VARCHAR(100),
      Role VARCHAR(50) NOT NULL,
     Phone VARCHAR(15) NOT NULL,
-    Email VARCHAR(100)
+    Email VARCHAR(100) UNIQUE,
      AdminID INT,
-    FOREIGN KEY (AdminID) REFERENCES User(ID)
+    FOREIGN KEY (AdminID) REFERENCES "User"(ID)
 );
 
 
@@ -35,7 +35,7 @@ CREATE TABLE Payments (
     UserID INT NOT NULL,
  PRIMARY KEY (GymMemberID, PaymentNu), -- Composite primary key
     FOREIGN KEY (GymMemberID) REFERENCES GymMember(ID),
-    FOREIGN KEY (UserID) REFERENCES User(ID)
+    FOREIGN KEY (UserID) REFERENCES "User"(ID)
 );
 
 
@@ -48,7 +48,7 @@ CREATE TABLE Class (
     Duration TIME NOT NULL,
     Schedule TEXT,
     UserID INT NOT NULL,
-    FOREIGN KEY (UserID) REFERENCES User(ID)
+    FOREIGN KEY (UserID) REFERENCES "User"(ID)
 );
 
 -- Create Feedback table
@@ -58,7 +58,7 @@ CREATE TABLE Feedback (
     Date DATE ,
     TrainerID INT,
     GymMemberID INT NOT NULL,
-    FOREIGN KEY (TrainerID) REFERENCES User(ID),
+    FOREIGN KEY (TrainerID) REFERENCES "User"(ID),
     FOREIGN KEY (GymMemberID) REFERENCES GymMember(ID)
 );
 
@@ -69,7 +69,7 @@ CREATE TABLE WorkoutPlan (
     Goals TEXT,
     Duration TIME,
     TrainerID INT NOT NULL,
-       FOREIGN KEY (TrainerID) REFERENCES User(ID)
+       FOREIGN KEY (TrainerID) REFERENCES "User"(ID)
 );
 
 -- Relationships
@@ -99,7 +99,7 @@ CREATE TABLE AdminManagesMembers (
     UserID INT NOT NULL,
     ClassID INT NOT NULL,
     PRIMARY KEY (UserID, ClassID) ,
-    FOREIGN KEY (UserID) REFERENCES User(ID),
+    FOREIGN KEY (UserID) REFERENCES "User"(ID),
     FOREIGN KEY (ClassID) REFERENCES Class(ID)
 );
 

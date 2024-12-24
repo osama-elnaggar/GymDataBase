@@ -28,5 +28,10 @@ namespace DBapplication
         {
 
         }
+
+        private void GymTrainerSignup_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

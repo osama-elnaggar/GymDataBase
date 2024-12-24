@@ -183,6 +183,7 @@
             this.Controls.Add(this.label1);
             this.Name = "GymTrainerSignup";
             this.Text = "GymTrainerSignup";
+            this.Load += new System.EventHandler(this.GymTrainerSignup_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

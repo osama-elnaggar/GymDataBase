@@ -12,11 +12,51 @@ namespace DBapplication
 {
     public partial class SignUp : Form
     {
-        Controller controllerObj;
+        GymMemberController controllerObj;
         public SignUp(Welcome f)
         {
             InitializeComponent();
-            controllerObj = new Controller();
+            controllerObj = new GymMemberController();
+        }
+
+        static string Encrypt(string text)
+        {
+            string cipherText = "";
+            foreach(char c in text)
+            {
+                if(char.IsLetter(c))
+                {
+                    char lowerC = char.ToLower(c);
+                    char shifted = (char)(((lowerC + 4 - 'a') % 26) + 'a');
+                    cipherText += shifted;
+                }else
+                {
+                    cipherText += c;
+                }
+
+            }
+            return cipherText;
+
+        }
+
+        static string Decrypt(string text)
+        {
+            string cipherText = "";
+            foreach (char c in text)
+            {
+                if (char.IsLetter(c))
+                {
+                    char lowerC = char.ToLower(c);
+                    char shifted = (char)(((lowerC - 4 - 'a') % 26) + 'a');
+                    cipherText += shifted;
+                }
+                else
+                {
+                    cipherText += c;
+                }
+
+            }
+            return cipherText;
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -46,16 +86,17 @@ namespace DBapplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox9.Text == "")
+            string password = Encrypt(textBox3.Text);
+            string decrpted = Decrypt(password);
+
+            if (textBox2.Text == "" || textBox3.Text == "" || textBox9.Text == "")
             {
                 MessageBox.Show("invalid input");
             }
             else
             {
 
-                if (int.TryParse(textBox1.Text, out int x))
-                {
-                int completed = controllerObj.GymMemberSignup(x, textBox2.Text, textBox3.Text, textBox4.Text, comboBox1.SelectedText, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text);
+                int completed = controllerObj.GymMemberSignup( textBox2.Text, password, dateTimePicker1.Value, comboBox1.SelectedText, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text);
                     if (completed == 0)
                     {
                         MessageBox.Show("failed insertion");
@@ -63,10 +104,8 @@ namespace DBapplication
                     else
                     {
                         MessageBox.Show("sign up succesful!");
-                        textBox1.Clear();
                         textBox2.Clear();
                         textBox3.Clear();
-                        textBox4.Clear();
                         textBox6.Clear();
                         textBox7.Clear();
                         textBox8.Clear();
@@ -78,7 +117,6 @@ namespace DBapplication
                 }
             }
             
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -91,6 +129,21 @@ namespace DBapplication
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

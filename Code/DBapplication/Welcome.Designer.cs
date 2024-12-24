@@ -59,14 +59,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(163, 290);
+            this.textBox1.Location = new System.Drawing.Point(151, 211);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(164, 26);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(163, 211);
+            this.textBox2.Location = new System.Drawing.Point(151, 296);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(164, 26);
             this.textBox2.TabIndex = 3;
@@ -97,6 +97,7 @@
             this.button3.TabIndex = 6;
             this.button3.Text = "login";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Welcome
             // 
