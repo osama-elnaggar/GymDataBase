@@ -89,7 +89,7 @@ namespace DBapplication
             string password = Encrypt(textBox3.Text);
             string decrpted = Decrypt(password);
 
-            if (textBox2.Text == "" || textBox3.Text == "" || textBox9.Text == "")
+            if (textBox2.Text == "" || textBox3.Text == "" || textBox6.Text == ""|| textBox7.Text == ""||textBox8.Text == ""||textBox9.Text == "")
             {
                 MessageBox.Show("invalid input");
             }

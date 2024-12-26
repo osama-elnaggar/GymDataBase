@@ -3,27 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|c:\\users\\gamin\\source\\repos\\dsa project\\gymdatabase\\code\\dbapplication\\gymmembercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|c:\\users\\gamin\\source\\repos\\dsa project\\gymdatabase\\code\\dbapplication\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\dbapplication\\gymmembercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\gymmembercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|c:\\users\\gamin\\source\\repos\\dsa project\\gymdatabase\\code\\dbapplication\\gymmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\gymmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\dbapplication\\gymtrainersignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\gymtrainersignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\dbapplication\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\dbapplication\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|c:\\users\\gamin\\source\\repos\\dsa project\\gymdatabase\\code\\dbapplication\\gymmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\dbapplication\\gymmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\gymmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,20 +19,40 @@
       "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|c:\\users\\gamin\\source\\repos\\dsa project\\gymdatabase\\code\\dbapplication\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|c:\\users\\gamin\\source\\repos\\dsa project\\gymdatabase\\code\\dbapplication\\gymmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\gymmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\dbapplication\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\dbapplication\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|c:\\users\\gamin\\source\\repos\\dsa project\\gymdatabase\\code\\dbapplication\\memberpaymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\memberpaymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|c:\\users\\gamin\\source\\repos\\dsa project\\gymdatabase\\code\\dbapplication\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\dbapplication\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|c:\\users\\gamin\\source\\repos\\dsa project\\gymdatabase\\code\\dbapplication\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\dbapplication\\gymtrainersignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\gymtrainersignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\dbapplication\\gymtrainersignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\gymtrainersignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\dbapplication\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DC8232D5-B804-4766-8840-C88C50EAD01E}|DBapplication\\DBapplication.csproj|solutionrelative:dbapplication\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,64 +74,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GymTrainerSignup.cs",
-              "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymTrainerSignup.cs",
-              "RelativeDocumentMoniker": "DBapplication\\GymTrainerSignup.cs",
-              "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymTrainerSignup.cs",
-              "RelativeToolTip": "DBapplication\\GymTrainerSignup.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "MemberPaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\MemberPaymentsController.cs",
+              "RelativeDocumentMoniker": "DBapplication\\MemberPaymentsController.cs",
+              "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\MemberPaymentsController.cs",
+              "RelativeToolTip": "DBapplication\\MemberPaymentsController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwE4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T23:32:27.951Z",
+              "WhenOpened": "2024-12-26T08:50:51.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GymTrainerSignup.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymTrainerSignup.cs",
-              "RelativeDocumentMoniker": "DBapplication\\GymTrainerSignup.cs",
-              "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymTrainerSignup.cs [Design]",
-              "RelativeToolTip": "DBapplication\\GymTrainerSignup.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T21:07:31.382Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "DBManager.cs",
               "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\DBManager.cs",
               "RelativeDocumentMoniker": "DBapplication\\DBManager.cs",
               "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\DBManager.cs",
               "RelativeToolTip": "DBapplication\\DBManager.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAkwC4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwC4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T20:30:47.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GymMemberController.cs",
               "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymMemberController.cs",
               "RelativeDocumentMoniker": "DBapplication\\GymMemberController.cs",
               "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymMemberController.cs",
               "RelativeToolTip": "DBapplication\\GymMemberController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwB8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwDgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T22:52:43.263Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Controller.cs",
               "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\Controller.cs",
               "RelativeDocumentMoniker": "DBapplication\\Controller.cs",
               "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\Controller.cs",
               "RelativeToolTip": "DBapplication\\Controller.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAqwBkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T20:30:35.667Z",
               "EditorCaption": ""
@@ -146,50 +142,58 @@
       },
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 292,
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "SignUp.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\SignUp.cs",
-              "RelativeDocumentMoniker": "DBapplication\\SignUp.cs",
-              "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\SignUp.cs [Design]",
-              "RelativeToolTip": "DBapplication\\SignUp.cs [Design]",
+              "Title": "FeedBack.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\FeedBack.cs",
+              "RelativeDocumentMoniker": "DBapplication\\FeedBack.cs",
+              "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\FeedBack.cs [Design]",
+              "RelativeToolTip": "DBapplication\\FeedBack.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T21:09:16.143Z",
+              "WhenOpened": "2024-12-26T10:11:31.505Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Welcome.cs",
-              "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\Welcome.cs",
-              "RelativeDocumentMoniker": "DBapplication\\Welcome.cs",
-              "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\Welcome.cs",
-              "RelativeToolTip": "DBapplication\\Welcome.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwD8AAAANAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FeedBack.cs",
+              "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\FeedBack.cs",
+              "RelativeDocumentMoniker": "DBapplication\\FeedBack.cs",
+              "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\FeedBack.cs",
+              "RelativeToolTip": "DBapplication\\FeedBack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T21:05:44.867Z",
+              "WhenOpened": "2024-12-26T10:11:38.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "GymMember.cs",
               "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymMember.cs",
               "RelativeDocumentMoniker": "DBapplication\\GymMember.cs",
               "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymMember.cs",
               "RelativeToolTip": "DBapplication\\GymMember.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T23:29:59.063Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "GymMember.cs [Design]",
               "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymMember.cs",
               "RelativeDocumentMoniker": "DBapplication\\GymMember.cs",
@@ -201,20 +205,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "SignUp.cs",
               "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\SignUp.cs",
               "RelativeDocumentMoniker": "DBapplication\\SignUp.cs",
               "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\SignUp.cs",
               "RelativeToolTip": "DBapplication\\SignUp.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T21:10:47.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
+              "Title": "Welcome.cs",
+              "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\Welcome.cs",
+              "RelativeDocumentMoniker": "DBapplication\\Welcome.cs",
+              "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\Welcome.cs",
+              "RelativeToolTip": "DBapplication\\Welcome.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwEEAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T21:05:44.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Welcome.cs [Design]",
               "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\Welcome.cs",
               "RelativeDocumentMoniker": "DBapplication\\Welcome.cs",
@@ -222,6 +239,31 @@
               "RelativeToolTip": "DBapplication\\Welcome.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T20:49:32.838Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GymTrainerSignup.cs",
+              "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymTrainerSignup.cs",
+              "RelativeDocumentMoniker": "DBapplication\\GymTrainerSignup.cs",
+              "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymTrainerSignup.cs",
+              "RelativeToolTip": "DBapplication\\GymTrainerSignup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T23:32:27.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GymTrainerSignup.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymTrainerSignup.cs",
+              "RelativeDocumentMoniker": "DBapplication\\GymTrainerSignup.cs",
+              "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymTrainerSignup.cs [Design]",
+              "RelativeToolTip": "DBapplication\\GymTrainerSignup.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T21:07:31.382Z",
               "EditorCaption": " [Design]"
             }
           ]

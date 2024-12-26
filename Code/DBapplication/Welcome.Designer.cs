@@ -68,6 +68,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(151, 296);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(164, 26);
             this.textBox2.TabIndex = 3;
             // 
@@ -114,6 +115,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Welcome";
             this.Text = "Welcome";
+            this.Load += new System.EventHandler(this.Welcome_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

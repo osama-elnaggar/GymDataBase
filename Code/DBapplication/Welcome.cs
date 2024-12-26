@@ -50,23 +50,28 @@ namespace DBapplication
             Form f = new GymTrainerSignup(this);
             f .Show();
             this.Hide();
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            DataTable t = controllerObj.CheckCreedentials(textBox1.Text,Encrypt(textBox2.Text));
+            DataTable t = controllerObj.CheckCreedentials(textBox1.Text,textBox2.Text);
             if (t == null)
             {
                 MessageBox.Show("invalid username or password");
             }
             else
             {
+
                 MessageBox.Show("login succssecful");
-                Form f = new GymMember(this);
+                Form f = new GymMember(controllerObj.getID(textBox1.Text, textBox2.Text));
                 f.Show();
                 this.Hide();
             }
+        }
+
+        private void Welcome_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
