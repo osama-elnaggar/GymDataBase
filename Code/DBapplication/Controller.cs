@@ -30,6 +30,30 @@ namespace DBapplication
 
             return dbMan.ExecuteReader(query);
         }
+        public DataTable CheckCreedentialsForUser(string Email, string Pass)
+        {
+
+            string query = $"SELECT * FROM [User] WHERE Email = '{Email}' AND Password = '{Pass}' ";
+
+            return dbMan.ExecuteReader(query);
+        }
+        public string GetUserRole(string Email, string Pass)
+        {
+
+            string query = $"SELECT * FROM [User] WHERE Email = '{Email}' AND Password = '{Pass}' ";
+
+            DataTable D = dbMan.ExecuteReader(query);
+
+            
+            if (D != null && D.Rows.Count > 0)
+            {
+                return D.Rows[0]["Role"].ToString();
+            }
+            else
+            {
+                return "User Not Found...";
+            }
+        }
         public int getID(string UserName, string Password)
         {
             string query = $"SELECT ID FROM GymMember WHERE UserName = '{UserName}' AND Password = '{Password}' ";
@@ -38,7 +62,13 @@ namespace DBapplication
             return x;
         }
 
-
+        public int getIDForUser(string Email, string Pass)
+        {
+            string query = $"SELECT ID FROM [User] WHERE Email = '{Email}' AND Password = '{Pass}' ";
+            DataTable t = dbMan.ExecuteReader(query);
+            int x = Convert.ToInt32(t.Rows[0][0]);
+            return x;
+        }
     }
 }
 
