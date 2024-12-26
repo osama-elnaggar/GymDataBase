@@ -94,7 +94,6 @@
     <Compile Include="GymTrainerSignup.Designer.cs">
       <DependentUpon>GymTrainerSignup.cs</DependentUpon>
     </Compile>
-    <Compile Include="MemberPaymentsController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.cs">
