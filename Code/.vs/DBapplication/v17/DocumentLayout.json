@@ -74,6 +74,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 6,
               "Title": "MemberPaymentsController.cs",
               "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\MemberPaymentsController.cs",
@@ -83,11 +84,38 @@
               "ViewState": "AgIAABoAAAAAAAAAAAAgwE4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T08:50:51.168Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "MemberPayments.cs",
+              "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\MemberPayments.cs",
+              "RelativeDocumentMoniker": "DBapplication\\MemberPayments.cs",
+              "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\MemberPayments.cs",
+              "RelativeToolTip": "DBapplication\\MemberPayments.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T15:50:35.158Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 8,
+=======
+              "DocumentIndex": 1,
+              "Title": "MemberPayments.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\MemberPayments.cs",
+              "RelativeDocumentMoniker": "DBapplication\\MemberPayments.cs",
+              "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\MemberPayments.cs [Design]",
+              "RelativeToolTip": "DBapplication\\MemberPayments.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T15:50:34.082Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+>>>>>>> Stashed changes
               "Title": "DBManager.cs",
               "DocumentMoniker": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\DBManager.cs",
               "RelativeDocumentMoniker": "DBapplication\\DBManager.cs",
@@ -106,7 +134,11 @@
               "RelativeDocumentMoniker": "DBapplication\\GymMemberController.cs",
               "ToolTip": "C:\\Users\\gamin\\source\\repos\\DSA project\\GymDataBase\\Code\\DBapplication\\GymMemberController.cs",
               "RelativeToolTip": "DBapplication\\GymMemberController.cs",
+<<<<<<< Updated upstream
               "ViewState": "AgIAACUAAAAAAAAAAAAkwDgAAAALAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwAkAAAAkAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T22:52:43.263Z",
               "EditorCaption": ""
