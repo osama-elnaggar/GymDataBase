@@ -12,12 +12,12 @@ namespace DBapplication
 {
     public partial class MemberPayments : Form
     {
-        GymMemberController controllerObj;
+        MemberPaymentsController controllerObj;
         private int ID;
         public MemberPayments(int Memberid)
         {
             InitializeComponent();
-            controllerObj = new GymMemberController();
+            controllerObj = new MemberPaymentsController();
             DataTable dt = controllerObj.GetPaymentNumber(Memberid);
             DataTable dt2 = controllerObj.GetAllPayments(Memberid);
             dataGridView1.DataSource = dt2;
