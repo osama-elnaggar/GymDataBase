@@ -40,16 +40,20 @@ namespace DBapplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form f = new SignUp(this);
-            f.Show();
             this.Hide();
+            Form f = new SignUp(this);
+            f.ShowDialog();
+            f = null;
+            this.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form f = new GymTrainerSignup(this);
-            f .Show();
             this.Hide();
+            Form f = new GymTrainerSignup(this);
+            f.ShowDialog();
+            f = null;
+            this.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -63,9 +67,11 @@ namespace DBapplication
             {
 
                 MessageBox.Show("login succssecful");
-                Form f = new GymMember(controllerObj.getID(textBox1.Text, textBox2.Text));
-                f.Show();
                 this.Hide();
+                Form f = new GymMember(controllerObj.getID(textBox1.Text, textBox2.Text));
+                f.ShowDialog();
+                f = null;
+                this.Show();
             }
         }
 

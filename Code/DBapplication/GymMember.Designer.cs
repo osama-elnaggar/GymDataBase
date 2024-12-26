@@ -32,6 +32,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -46,7 +47,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(336, 199);
+            this.button2.Location = new System.Drawing.Point(336, 324);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 40);
             this.button2.TabIndex = 1;
@@ -56,29 +57,40 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(336, 306);
+            this.button3.Location = new System.Drawing.Point(222, 223);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(131, 40);
             this.button3.TabIndex = 2;
-            this.button3.Text = "book/attend class";
+            this.button3.Text = "Book CLass";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(734, 441);
+            this.button4.Location = new System.Drawing.Point(703, 421);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(131, 37);
+            this.button4.Size = new System.Drawing.Size(162, 57);
             this.button4.TabIndex = 3;
             this.button4.Text = "leave feedback";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(460, 223);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(131, 40);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Attend class";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // GymMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 493);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -96,5 +108,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }

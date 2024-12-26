@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AttendsClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendsClass.Designer.cs">
+      <DependentUpon>AttendsClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookCLass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookCLass.Designer.cs">
+      <DependentUpon>BookCLass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller.cs" />
     <Compile Include="DBManager.cs" />
     <Compile Include="FeedBack.cs">
@@ -98,6 +110,12 @@
     <Compile Include="Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AttendsClass.resx">
+      <DependentUpon>AttendsClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookCLass.resx">
+      <DependentUpon>BookCLass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FeedBack.resx">
       <DependentUpon>FeedBack.cs</DependentUpon>
     </EmbeddedResource>

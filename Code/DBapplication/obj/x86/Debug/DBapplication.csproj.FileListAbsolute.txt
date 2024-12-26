@@ -64,3 +64,5 @@ C:\Users\dell\Desktop\GymDataBase-main\Code\DBapplication\obj\x86\Debug\DBapplic
 C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.MemberPayments.resources
 C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.LogWorkout.resources
 C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.FeedBack.resources
+C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.BookCLass.resources
+C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.AttendsClass.resources
