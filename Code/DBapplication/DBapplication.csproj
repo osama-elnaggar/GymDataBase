@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AttendsClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendsClass.Designer.cs">
+      <DependentUpon>AttendsClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookCLass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookCLass.Designer.cs">
+      <DependentUpon>BookCLass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller.cs" />
     <Compile Include="DBManager.cs" />
     <Compile Include="FeedBack.cs">
@@ -91,12 +103,6 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="User.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="User.Designer.cs">
-      <DependentUpon>User.cs</DependentUpon>
-    </Compile>
     <Compile Include="ValidationClass.cs" />
     <Compile Include="Welcome.cs">
       <SubType>Form</SubType>
@@ -104,6 +110,12 @@
     <Compile Include="Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AttendsClass.resx">
+      <DependentUpon>AttendsClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookCLass.resx">
+      <DependentUpon>BookCLass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FeedBack.resx">
       <DependentUpon>FeedBack.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,9 +143,6 @@
     </Compile>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User.resx">
-      <DependentUpon>User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>

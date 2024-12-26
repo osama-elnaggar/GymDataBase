@@ -64,21 +64,5 @@ C:\Users\dell\Desktop\GymDataBase-main\Code\DBapplication\obj\x86\Debug\DBapplic
 C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.MemberPayments.resources
 C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.LogWorkout.resources
 C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.FeedBack.resources
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\bin\Debug\DBapplication.exe.config
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\bin\Debug\DBapplication.exe
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\bin\Debug\DBapplication.pdb
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.csproj.AssemblyReference.cache
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.csproj.SuggestedBindingRedirects.cache
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.FeedBack.resources
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.GymMember.resources
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.GymTrainerSignup.resources
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.LogWorkout.resources
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.MemberPayments.resources
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.Properties.Resources.resources
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.SignUp.resources
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.Welcome.resources
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.csproj.GenerateResource.cache
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.csproj.CoreCompileInputs.cache
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.exe
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.pdb
-C:\Users\dell\Desktop\gymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.User.resources
+C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.BookCLass.resources
+C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.AttendsClass.resources
