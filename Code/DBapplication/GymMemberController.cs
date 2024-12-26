@@ -115,6 +115,8 @@ namespace DBapplication
 
         }
 
+
+
         public DataTable GetPaymentNumber(int MemberID)
         {
             string query = "SELECT PaymentNu, Amount FROM Payments WHERE GymMemberID = " + MemberID + ";";
@@ -174,5 +176,4 @@ namespace DBapplication
             return "Payment successful.";
         }
     }
-
 }
