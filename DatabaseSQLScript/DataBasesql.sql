@@ -15,7 +15,6 @@ CREATE TABLE GymMember (
     Gender VARCHAR(10) NOT NULL,
     Phone VARCHAR(15) NOT NULL,
     Email VARCHAR(100),
-    PaymentHistory TEXT,
 PlanFinishData DATE,
 Points INT DEFAULT 0
    );
@@ -210,27 +209,27 @@ INSERT INTO "User" (FirstName, LastName, Gender, Experience, Role, Phone, Email,
 
 
 -- Add 20 tuples to GymMember table
-INSERT INTO GymMember (UserName, Password, BirthDate, Gender, Phone, Email, PaymentHistory, PlanFinishData, Points) VALUES
-('User1', 'pass1', '1990-01-01', 'Male', '0111111111', 'user1@example.com', 'Monthly Payment', '2024-12-31', 0),
-('User2', 'pass2', '1991-02-02', 'Female', '0111111112', 'user2@example.com', 'Monthly Payment', '2024-12-31', 0),
-('User3', 'pass3', '1992-03-03', 'Male', '0111111113', 'user3@example.com', 'Monthly Payment', '2024-12-31', 0),
-('User4', 'pass4', '1993-04-04', 'Female', '0111111114', 'user4@example.com', 'Monthly Payment', '2024-12-31', 0),
-('User5', 'pass5', '1994-05-05', 'Male', '0111111115', 'user5@example.com', 'Monthly Payment', '2024-12-31', 0),
-('User6', 'pass6', '1995-06-06', 'Female', '0111111116', 'user6@example.com', 'Monthly Payment', '2024-12-31', 0),
-('User7', 'pass7', '1996-07-07', 'Male', '0111111117', 'user7@example.com', 'Monthly Payment', '2024-12-31', 0),
-('User8', 'pass8', '1997-08-08', 'Female', '0111111118', 'user8@example.com', 'Monthly Payment', '2024-12-31', 0),
-('User9', 'pass9', '1998-09-09', 'Male', '0111111119', 'user9@example.com', 'Monthly Payment', '2024-12-31', 0),
-('User10', 'pass10', '1999-10-10', 'Female', '0111111120', 'user10@example.com', 'Monthly Payment', '2024-12-31', 0),
-('User11', 'pass11', '1989-11-11', 'Male', '0111111121', 'user11@example.com', 'Yearly Payment', '2024-12-31', 0),
-('User12', 'pass12', '1988-12-12', 'Female', '0111111122', 'user12@example.com', 'Yearly Payment', '2024-12-31', 0),
-('User13', 'pass13', '1987-01-13', 'Male', '0111111123', 'user13@example.com', 'Yearly Payment', '2024-12-31', 0),
-('User14', 'pass14', '1986-02-14', 'Female', '0111111124', 'user14@example.com', 'Yearly Payment', '2024-12-31', 0),
-('User15', 'pass15', '1985-03-15', 'Male', '0111111125', 'user15@example.com', 'Yearly Payment', '2024-12-31', 0),
-('User16', 'pass16', '1984-04-16', 'Female', '0111111126', 'user16@example.com', 'Yearly Payment', '2024-12-31', 0),
-('User17', 'pass17', '1983-05-17', 'Male', '0111111127', 'user17@example.com', 'Yearly Payment', '2024-12-31', 0),
-('User18', 'pass18', '1982-06-18', 'Female', '0111111128', 'user18@example.com', 'Yearly Payment', '2024-12-31', 0),
-('User19', 'pass19', '1981-07-19', 'Male', '0111111129', 'user19@example.com', 'Yearly Payment', '2024-12-31', 0),
-('User20', 'pass20', '1980-08-20', 'Female', '0111111130', 'user20@example.com', 'Yearly Payment', '2024-12-31', 0);
+INSERT INTO GymMember (UserName, Password, BirthDate, Gender, Phone, Email,  PlanFinishData, Points) VALUES
+('User1', 'pass1', '1990-01-01', 'Male', '0111111111', 'user1@example.com', '2024-12-31', 0),
+('User2', 'pass2', '1991-02-02', 'Female', '0111111112', 'user2@example.com',  '2024-12-31', 0),
+('User3', 'pass3', '1992-03-03', 'Male', '0111111113', 'user3@example.com',  '2024-12-31', 0),
+('User4', 'pass4', '1993-04-04', 'Female', '0111111114', 'user4@example.com',  '2024-12-31', 0),
+('User5', 'pass5', '1994-05-05', 'Male', '0111111115', 'user5@example.com',  '2024-12-31', 0),
+('User6', 'pass6', '1995-06-06', 'Female', '0111111116', 'user6@example.com', '2024-12-31', 0),
+('User7', 'pass7', '1996-07-07', 'Male', '0111111117', 'user7@example.com',  '2024-12-31', 0),
+('User8', 'pass8', '1997-08-08', 'Female', '0111111118', 'user8@example.com', '2024-12-31', 0),
+('User9', 'pass9', '1998-09-09', 'Male', '0111111119', 'user9@example.com',  '2024-12-31', 0),
+('User10', 'pass10', '1999-10-10', 'Female', '0111111120', 'user10@example.com', '2024-12-31', 0),
+('User11', 'pass11', '1989-11-11', 'Male', '0111111121', 'user11@example.com',  '2024-12-31', 0),
+('User12', 'pass12', '1988-12-12', 'Female', '0111111122', 'user12@example.com', '2024-12-31', 0),
+('User13', 'pass13', '1987-01-13', 'Male', '0111111123', 'user13@example.com',  '2024-12-31', 0),
+('User14', 'pass14', '1986-02-14', 'Female', '0111111124', 'user14@example.com', '2024-12-31', 0),
+('User15', 'pass15', '1985-03-15', 'Male', '0111111125', 'user15@example.com', '2024-12-31', 0),
+('User16', 'pass16', '1984-04-16', 'Female', '0111111126', 'user16@example.com', '2024-12-31', 0),
+('User17', 'pass17', '1983-05-17', 'Male', '0111111127', 'user17@example.com',  '2024-12-31', 0),
+('User18', 'pass18', '1982-06-18', 'Female', '0111111128', 'user18@example.com', '2024-12-31', 0),
+('User19', 'pass19', '1981-07-19', 'Male', '0111111129', 'user19@example.com',  '2024-12-31', 0),
+('User20', 'pass20', '1980-08-20', 'Female', '0111111130', 'user20@example.com', '2024-12-31', 0);
 
 -- Add 20 tuples to Payments table
 INSERT INTO Payments (Amount, Date, GymMemberID, UserID) VALUES

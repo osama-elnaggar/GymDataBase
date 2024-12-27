@@ -69,6 +69,11 @@ namespace DBapplication
 
 
         }
+
+        private void DeleteMember_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

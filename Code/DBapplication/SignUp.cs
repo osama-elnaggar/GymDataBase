@@ -89,14 +89,14 @@ namespace DBapplication
             string password = Encrypt(textBox3.Text);
             string decrpted = Decrypt(password);
 
-            if (textBox2.Text == "" || textBox3.Text == "" || textBox6.Text == ""|| textBox7.Text == ""||textBox8.Text == ""||textBox9.Text == "")
+            if (textBox2.Text == "" || textBox3.Text == "" || textBox6.Text == ""|| textBox7.Text == "")
             {
                 MessageBox.Show("invalid input");
             }
             else
             {
 
-                int completed = controllerObj.GymMemberSignup( textBox2.Text, password, dateTimePicker1.Value, comboBox1.SelectedText, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text);
+                int completed = controllerObj.GymMemberSignup( textBox2.Text, password, dateTimePicker1.Value, comboBox1.SelectedText, textBox6.Text, textBox7.Text, System.DateTime.Now);
                     if (completed == 0)
                     {
                         MessageBox.Show("failed insertion");
@@ -107,9 +107,7 @@ namespace DBapplication
                         textBox2.Clear();
                         textBox3.Clear();
                         textBox6.Clear();
-                        textBox7.Clear();
-                        textBox8.Clear();
-                        textBox9.Clear();
+                    textBox7.Clear();
                         Form f = new Welcome();
                         f.Show();
                         this.Close();

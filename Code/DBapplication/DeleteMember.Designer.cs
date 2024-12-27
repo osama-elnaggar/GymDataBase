@@ -42,9 +42,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(258, 36);
+            this.button1.Location = new System.Drawing.Point(290, 45);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 41);
+            this.button1.Size = new System.Drawing.Size(118, 51);
             this.button1.TabIndex = 0;
             this.button1.Text = "Delete Member";
             this.button1.UseVisualStyleBackColor = true;
@@ -52,9 +53,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 265);
+            this.button2.Location = new System.Drawing.Point(14, 331);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 29);
+            this.button2.Size = new System.Drawing.Size(281, 36);
             this.button2.TabIndex = 1;
             this.button2.Text = "Search For member By UserName";
             this.button2.UseVisualStyleBackColor = true;
@@ -62,9 +64,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(608, 271);
+            this.button3.Location = new System.Drawing.Point(684, 339);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(147, 23);
+            this.button3.Size = new System.Drawing.Size(165, 29);
             this.button3.TabIndex = 2;
             this.button3.Text = "Show All Members";
             this.button3.UseVisualStyleBackColor = true;
@@ -74,42 +77,45 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 300);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 374);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(900, 188);
             this.dataGridView1.TabIndex = 3;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 55);
+            this.textBox1.Location = new System.Drawing.Point(81, 69);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(112, 26);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(292, 272);
+            this.textBox2.Location = new System.Drawing.Point(328, 340);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.Size = new System.Drawing.Size(112, 26);
             this.textBox2.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(69, 36);
+            this.label1.Location = new System.Drawing.Point(78, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 16);
+            this.label1.Size = new System.Drawing.Size(198, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "Write Member ID to Delete";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(306, 252);
+            this.label2.Location = new System.Drawing.Point(344, 315);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 16);
+            this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Username";
             // 
@@ -117,17 +123,17 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(32, 246);
+            this.label3.Location = new System.Drawing.Point(36, 308);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(201, 16);
+            this.label3.Size = new System.Drawing.Size(244, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "Search Gets the Nearest Results";
             // 
             // DeleteMember
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -137,8 +143,10 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "DeleteMember";
             this.Text = "DeleteMember";
+            this.Load += new System.EventHandler(this.DeleteMember_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

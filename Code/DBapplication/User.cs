@@ -21,17 +21,19 @@ namespace DBapplication
             ID = id;
             UserNu = UserNumber;
             InitializeComponent();
-            if (UserNumber == 3)
+            if (UserNumber == 3) //Worker
             {
                 DeleteMember.Enabled = false;
                 ManageClassesandplans.Enabled = false;
                 ModifyUsers.Enabled = false;
                 SeeFeedBack.Enabled = false;
             }
-            else if (UserNumber == 2)
+            else if (UserNumber == 2) // Trainer
             {
                 DeleteMember.Enabled = false;
                 ModifyUsers.Enabled = false;
+                button1.Enabled = false;
+                AddMember.Enabled = false;
             }
 
         }
@@ -43,27 +45,59 @@ namespace DBapplication
 
         private void AddMember_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form f = new AddMember();
-            f.Show();
+            f.ShowDialog();
+            f = null;
+            this.Show();
 
         }
 
         private void DeleteMember_Click(object sender, EventArgs e)
         {
-            Form form = new DeleteMember();
-            form.Show();
+            this.Hide();
+            Form f = new DeleteMember();
+            f.ShowDialog();
+            f = null;
+            this.Show();
         }
 
         private void ManageClassesandplans_Click(object sender, EventArgs e)
         {
-            Form form = new PlansandClassesForm(UserNu,ID);
-            form.Show();
+            this.Hide();
+            Form f = new PlansandClassesForm(UserNu, ID);
+            f.ShowDialog();
+            f = null;
+            this.Show();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form form = new ReciveFeedBack(ID);
-            form.Show();
+            this.Hide();
+            Form f = new ReciveFeedBack(ID);
+            f.ShowDialog();
+            f = null;
+            this.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new PaymentsUserform(UserNu, ID);
+            f.ShowDialog();
+            f = null;
+            this.Show();
+
+        }
+
+        private void ModifyUsers_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new ManageUsersForm();
+            f.ShowDialog();
+            f = null;
+            this.Show();
         }
     }
 }

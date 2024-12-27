@@ -34,7 +34,7 @@ namespace DBapplication
                 try
                 {
                     int result = controllerObj.AddGymMember(textBox1.Text,
-                    textBox2.Text, comboBox1.SelectedItem.ToString(), PhoneTextbox.Text, textBox3.Text, textBox4.Text, "Null", dateTimePicker1.Value.Date, null);
+                    comboBox1.SelectedItem.ToString(), PhoneTextbox.Text, textBox3.Text, textBox4.Text, dateTimePicker1.Value.Date, System.DateTime.Now);
 
                     if (result == 0)
                         MessageBox.Show("The insertion failed wrong data or row duplication happened...");
@@ -56,6 +56,15 @@ namespace DBapplication
             }
         }
 
+        private void AddMember_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

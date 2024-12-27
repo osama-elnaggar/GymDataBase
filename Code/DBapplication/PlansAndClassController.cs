@@ -19,13 +19,13 @@ namespace DBapplication
             dbMan.CloseConnection();
         }
 
-        public int AddClass(string name, int capcity,DateTime Duration,string Schedule,int UserID,int price)
+        public int AddClass(string name, int capcity,TimeSpan Duration,string Schedule,int UserID,int price)
         {
             string query = $"INSERT INTO Class(Name,Capacity,Duration,Schedule,UserID,Price) VALUES('{name}',{capcity},'{Duration}','{Schedule}',{UserID},{price})";
             return dbMan.ExecuteNonQuery(query);
         }
 
-        public int AddPlan(string Description,string Goals,DateTime Time, int TrainerID,int Price)
+        public int AddPlan(string Description,string Goals, TimeSpan Time, int TrainerID,int Price)
         {
             string query = $"INSERT INTO WorkoutPlan(Description,Goals,Duration,TrainerID,Price) VALUES('{Description}','{Goals}','{Time}',{TrainerID},{Price})";
             return dbMan.ExecuteNonQuery(query);
@@ -53,12 +53,23 @@ namespace DBapplication
 
         public DataTable SearchClassByName(string name)
         {
-            string query = $"SELECT * FROM Class WHERE Name='{name}' ";
+            string query = $"SELECT * FROM Class WHERE Name LIKE '%{name}%' ";
+            return dbMan.ExecuteReader(query);
+        }
+        
+            public DataTable GetallclassesByID(int id)
+        {
+            string query = $"SELECT * FROM Class WHERE UserID = {id} ";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable GetallPlansByID(int id)
+        {
+            string query = $"SELECT * FROM WorkoutPlan WHERE TrainerID = {id} ";
             return dbMan.ExecuteReader(query);
         }
         public DataTable SearchPlanByGoals(string goal)
         {
-            string query = $"SELECT * FROM WorkoutPlan WHERE CONVERT(VARCHAR,Goals) = '{goal}' ";
+            string query = $"SELECT * FROM WorkoutPlan WHERE CONVERT(VARCHAR,Goals) LIKE '%{goal}%' ";
             return dbMan.ExecuteReader(query);
 
         }

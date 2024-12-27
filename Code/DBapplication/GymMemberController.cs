@@ -21,11 +21,11 @@ namespace DBapplication
 
         public int GymMemberSignup(string Username, string Password, System.DateTime BDate,
             string Gender, string phone, string email,
-            string payment_history, string MembershipStatus)
+              System.DateTime PlanFinishData)
         {
-            string query = $"INSERT INTO GymMember(UserName,Password,BirthDate,Gender,Phone,Email,PaymentHistory,MembershipStatus)" +
+            string query = $"INSERT INTO GymMember(UserName,Password,BirthDate,Gender,Phone,Email,PlanFinishData)" +
                 $" VALUES('{Username}','{Password}','{BDate}'," +
-                $"'{Gender}','{phone}','{email}','{payment_history}','{MembershipStatus}')";
+                $"'{Gender}','{phone}','{email}','{PlanFinishData}')";
             return (dbMan.ExecuteNonQuery(query));
         }
 
@@ -73,6 +73,15 @@ namespace DBapplication
         {
             string query = $"INSERT INTO Feedback(Comments,Date,TrainerID,GymMemberID)" +
                 $"VALUES('{comments}','{Date}',{TrainerID},{MemberID})";
+
+            return dbMan.ExecuteNonQuery(query);
+
+        }
+        public int AddPoints(int amount, int id)
+        {
+            DateTime date = DateTime.Now;
+            string query = $"INSERT INTO Payments(Amount, Date, GymMemberID, UserID)" +
+                $"VALUES({amount},'{date}',{id},9)";
 
             return dbMan.ExecuteNonQuery(query);
 

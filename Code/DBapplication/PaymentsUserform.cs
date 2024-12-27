@@ -10,15 +10,18 @@ using System.Windows.Forms;
 
 namespace DBapplication
 {
-    public partial class ManageUsersForm : Form
+
+    public partial class PaymentsUserform : Form
     {
-        public ManageUsersForm()
+        Controller controllerObj;
+        int userID;
+        int usernum;
+        public PaymentsUserform(int Nu, int id)
         {
             InitializeComponent();
-        }
-
-        private void ManageUsersForm_Load(object sender, EventArgs e)
-        {
+            controllerObj = new Controller();
+            usernum = Nu;
+            userID = id;
 
         }
     }

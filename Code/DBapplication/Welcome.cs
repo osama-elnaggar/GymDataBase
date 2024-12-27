@@ -40,16 +40,21 @@ namespace DBapplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form f = new SignUp(this);
-            f.Show();
             this.Hide();
+            Form f = new SignUp(this);
+            f.ShowDialog();
+            f = null;
+            this.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form f = new GymTrainerSignup(this);
-            f.Show();
             this.Hide();
+            Form f = new GymTrainerSignup(this);
+            f.ShowDialog();
+            f = null;
+            this.Show();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -61,11 +66,12 @@ namespace DBapplication
             }
             else
             {
-
+                this.Hide();
                 MessageBox.Show("login succssecful");
                 Form f = new GymMember(controllerObj.getID(textBox1.Text, textBox2.Text));
-                f.Show();
-                this.Hide();
+                f.ShowDialog();
+                f = null;
+                this.Show();
             }
         }
 
@@ -89,24 +95,53 @@ namespace DBapplication
                 int id = controllerObj.getIDForUser(UserEmailBox.Text, UserPassBox.Text);
                 if (Role == "Trainer")
                 {
-                    Form f = new User(2, id);
-                    f.Show();
                     this.Hide();
+                    Form f = new User(2, id);
+                    f.ShowDialog();
+                    f = null;
+                    this.Show();
                 }
                 else if (Role == "Admin")
                 {
-                    Form f = new User(1, id);
-                    f.Show();
                     this.Hide();
+                    Form f = new User(1, id);
+                    f.ShowDialog();
+                    f = null;
+                    this.Show();
                 }
                 else if (Role == "Worker")
                 {
-                    Form f = new User(3, id);
-                    f.Show();
                     this.Hide();
+                    Form f = new User(3, id);
+                    f.ShowDialog();
+                    f = null;
+                    this.Show();
 
                 }
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new ForgotPass();
+            f.ShowDialog();
+            f = null;
+            this.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new ForgotPassUser();
+            f.ShowDialog();
+            f = null;
+            this.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

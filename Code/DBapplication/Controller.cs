@@ -23,10 +23,10 @@ namespace DBapplication
             dbMan.CloseConnection();
         }
 
-        public DataTable CheckCreedentials(string UserName, string Password)
+        public DataTable CheckCreedentials(string email, string Password)
         {
 
-            string query = $"SELECT * FROM GymMember WHERE UserName = '{UserName}' AND Password = '{Password}' ";
+            string query = $"SELECT * FROM GymMember WHERE Email = '{email}' AND Password = '{Password}' ";
 
             return dbMan.ExecuteReader(query);
         }
@@ -36,6 +36,15 @@ namespace DBapplication
             DataTable t = dbMan.ExecuteReader(query);
             int x = Convert.ToInt32(t.Rows[0][0]);
             return x;
+        }
+        public int AddPoints(int amount, int id)
+        {
+            DateTime date = DateTime.Now;
+            string query = $"INSERT INTO Payments(Amount, Date, GymMemberID, UserID)" +
+                $"VALUES({amount},'{date}',{id},9)";
+
+            return dbMan.ExecuteNonQuery(query);
+
         }
 
         public DataTable CheckCreedentialsForUser(string Email, string Pass)
@@ -71,10 +80,10 @@ namespace DBapplication
             return x;
         }
 
-        public int AddGymMember(string FirstName, string LastName, string Gender, string Phone, string Email, string Password, string PaymentHistory, DateTime? BirthDate, DateTime? PlanFinishDate)
+        public int AddGymMember(string username, string Gender, string Phone, string Email, string Password, DateTime? BirthDate, DateTime? PlanFinishDate)
         {
-            string query = $"INSERT INTO GymMember (UserName, Password, Gender, Phone, Email, PaymentHistory, BirthDate, PlanFinishData, Points)  " +
-                           $"VALUES ('{FirstName}', '{Password}', '{Gender}', '{Phone}', '{Email}', 'Nothing' , '{BirthDate}', null , 0);";
+            string query = $"INSERT INTO GymMember (UserName, Password, Gender, Phone, Email, BirthDate, PlanFinishData, Points)  " +
+                           $"VALUES ('{username}', '{Password}', '{Gender}', '{Phone}', '{Email}', '{BirthDate}', '{PlanFinishDate}' , 0);";
             int rowsAffected = dbMan.ExecuteNonQuery(query);
 
             return rowsAffected;
@@ -114,6 +123,29 @@ namespace DBapplication
             string query = $"SELECT * FROM Feedback WHERE TrainerID = {id}";
             return dbMan.ExecuteReader(query);
         }
+
+        public DataTable checkemail(string email)
+        {
+            string query = $"SELECT * FROM GymMember WHERE Email = '{email}'";
+            return dbMan.ExecuteReader(query);
+        }
+        public int forgotpass(string password,string email)
+        {
+            string query=$"UPDATE GymMember SET Password = '{password}' WHERE Email = '{email}'";
+            return dbMan.ExecuteNonQuery(query);
+        }
+
+        public DataTable checkemailUser(string email)
+        {
+            string query = $"SELECT * FROM [User] WHERE Email = '{email}'";
+            return dbMan.ExecuteReader(query);
+        }
+        public int forgotpassUser(string password, string email)
+        {
+            string query = $"UPDATE [User] SET Password = '{password}' WHERE Email = '{email}'";
+            return dbMan.ExecuteNonQuery(query);
+        }
+
     }
 }
 

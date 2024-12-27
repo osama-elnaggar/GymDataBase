@@ -81,6 +81,18 @@
     <Compile Include="FeedBack.Designer.cs">
       <DependentUpon>FeedBack.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPass.Designer.cs">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassUser.Designer.cs">
+      <DependentUpon>ForgotPassUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogWorkout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,12 @@
       <DependentUpon>GymTrainerSignup.cs</DependentUpon>
     </Compile>
     <Compile Include="MemberPaymentsController.cs" />
+    <Compile Include="PaymentsUserform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentsUserform.Designer.cs">
+      <DependentUpon>PaymentsUserform.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlansAndClassController.cs" />
     <Compile Include="PlansandClassesForm.cs">
       <SubType>Form</SubType>
@@ -162,6 +180,12 @@
     <EmbeddedResource Include="FeedBack.resx">
       <DependentUpon>FeedBack.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPass.resx">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassUser.resx">
+      <DependentUpon>ForgotPassUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GymMember.resx">
       <DependentUpon>GymMember.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,8 +195,14 @@
     <EmbeddedResource Include="LogWorkout.resx">
       <DependentUpon>LogWorkout.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageUsersForm.resx">
+      <DependentUpon>ManageUsersForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MemberPayments.resx">
       <DependentUpon>MemberPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentsUserform.resx">
+      <DependentUpon>PaymentsUserform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlansandClassesForm.resx">
       <DependentUpon>PlansandClassesForm.cs</DependentUpon>
