@@ -59,7 +59,8 @@ CREATE TABLE Class (
     Schedule TEXT,
     UserID INT NOT NULL,
     Price INT,
-    FOREIGN KEY (UserID) REFERENCES "User"(ID)
+    FOREIGN KEY (UserID) REFERENCES "User"(ID) 	ON DELETE CASCADE
+
 );
 
 -- Create Feedback table
@@ -81,7 +82,8 @@ CREATE TABLE WorkoutPlan (
     Duration TIME,
     TrainerID INT NOT NULL,
     Price INT,
-       FOREIGN KEY (TrainerID) REFERENCES "User"(ID)
+       FOREIGN KEY (TrainerID) REFERENCES "User"(ID)  ON DELETE CASCADE
+
 );
 
 -- Relationships

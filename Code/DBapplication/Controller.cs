@@ -84,7 +84,7 @@ namespace DBapplication
             string query = $"DELETE FROM GymMember WHERE ID = {MemberID}";
             int rowsAffected = dbMan.ExecuteNonQuery(query);
             return rowsAffected;
-           
+
         }
         public DataTable ShowMember(string Email, string Pass)
         {
@@ -108,8 +108,13 @@ namespace DBapplication
 
             return dbMan.ExecuteReader(query);
         }
+
+        public DataTable GetFeedBack(int id)
+        {
+            string query = $"SELECT * FROM Feedback WHERE TrainerID = {id}";
+            return dbMan.ExecuteReader(query);
+        }
     }
 }
-
 
 

@@ -113,6 +113,7 @@
       <DependentUpon>GymTrainerSignup.cs</DependentUpon>
     </Compile>
     <Compile Include="MemberPaymentsController.cs" />
+    <Compile Include="PlansAndClassController.cs" />
     <Compile Include="PlansandClassesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +122,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReciveFeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReciveFeedBack.Designer.cs">
+      <DependentUpon>ReciveFeedBack.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +187,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReciveFeedBack.resx">
+      <DependentUpon>ReciveFeedBack.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>

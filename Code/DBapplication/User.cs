@@ -26,6 +26,7 @@ namespace DBapplication
                 DeleteMember.Enabled = false;
                 ManageClassesandplans.Enabled = false;
                 ModifyUsers.Enabled = false;
+                SeeFeedBack.Enabled = false;
             }
             else if (UserNumber == 2)
             {
@@ -55,7 +56,13 @@ namespace DBapplication
 
         private void ManageClassesandplans_Click(object sender, EventArgs e)
         {
-            Form form = new PlansandClassesForm(UserNu);
+            Form form = new PlansandClassesForm(UserNu,ID);
+            form.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form form = new ReciveFeedBack(ID);
             form.Show();
         }
     }

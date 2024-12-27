@@ -89,3 +89,8 @@ C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplic
 C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.User.resources
 C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.DeleteMember.resources
 C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.PlansandClassesForm.resources
+C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.AddMember.resources
+C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.DeleteMember.resources
+C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.PlansandClassesForm.resources
+C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.User.resources
+C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.ReciveFeedBack.resources
