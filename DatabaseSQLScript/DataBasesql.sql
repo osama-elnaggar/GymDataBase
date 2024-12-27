@@ -16,8 +16,9 @@ CREATE TABLE GymMember (
     Phone VARCHAR(15) NOT NULL,
     Email VARCHAR(100),
     PaymentHistory TEXT,
-    MembershipStatus VARCHAR(50) NOT NULL
-);
+PlanFinishData DATE,
+Points INT DEFAULT 0
+   );
 
 -- Create User(Trainer,Admin) table
 CREATE TABLE "User" (
@@ -57,6 +58,7 @@ CREATE TABLE Class (
     Duration TIME NOT NULL,
     Schedule TEXT,
     UserID INT NOT NULL,
+    Price INT,
     FOREIGN KEY (UserID) REFERENCES "User"(ID)
 );
 
@@ -78,6 +80,7 @@ CREATE TABLE WorkoutPlan (
     Goals TEXT,
     Duration TIME,
     TrainerID INT NOT NULL,
+    Price INT,
        FOREIGN KEY (TrainerID) REFERENCES "User"(ID)
 );
 
@@ -180,29 +183,63 @@ INSERT INTO Allcardsintheworld (CardNumber, CVV, Balance) VALUES
 ('3445566778899011', '111', 678.90);
 
 
--- Insert into GymMember
-INSERT INTO GymMember (UserName, Password, BirthDate, Gender, Phone, Email, PaymentHistory, MembershipStatus) VALUES
-('JohnDoe', 'password123', '1990-05-15', 'Male', '1234567890', 'johndoe@example.com', 'Monthly Payment', 'Active'),
-('JaneSmith', 'password456', '1985-10-20', 'Female', '0987654321', 'janesmith@example.com', 'Yearly Payment', 'Active'),
-('AliceBrown', 'alice2023', '1995-03-12', 'Female', '1122334455', 'alicebrown@example.com', 'Monthly Payment', 'Inactive');
+-- Insert into User table
+INSERT INTO "User" (FirstName, LastName, Gender, Experience, Role, Phone, Email, Password, AdminID) VALUES
+('Ahmed', 'Ali', 'Male', '5 years as Trainer', 'Trainer', '1234567890', 'ahmed.ali@example.com', 'password123', 9),
+('Sara', 'Ibrahim', 'Female', '3 years as Trainer', 'Trainer', '1234567891', 'sara.ibrahim@example.com', 'password123', 9),
+('Hassan', 'Omar', 'Male', '2 years as Trainer', 'Trainer', '1234567892', 'hassan.omar@example.com', 'password123', 9),
+('Amal', 'Fathy', 'Female', '1 year as Trainer', 'Trainer', '1234567893', 'amal.fathy@example.com', 'password123', 9),
+('Khaled', 'Hassan', 'Male', '7 years as Worker', 'Worker', '1234567894', 'khaled.hassan@example.com', 'password123', 10),
+('Laila', 'Said', 'Female', '4 years as Worker', 'Worker', '1234567895', 'laila.said@example.com', 'password123', 10),
+('Tarek', 'Youssef', 'Male', '6 years as Worker', 'Worker', '1234567896', 'tarek.youssef@example.com', 'password123', 10),
+('Nour', 'Hesham', 'Female', '8 years as Worker', 'Worker', '1234567897', 'nour.hesham@example.com', 'password123', 10),
+('Omar', 'Kamel', 'Male', '10 years as Admin', 'Admin', '1234567898', 'omar.kamel@example.com', 'password123', NULL),
+('Heba', 'Gamal', 'Female', '12 years as Admin', 'Admin', '1234567899', 'heba.gamal@example.com', 'password123', NULL),
+('Adel', 'Mounir', 'Male', '15 years as Admin', 'Admin', '1234567800', 'adel.mounir@example.com', 'password123', NULL),
+('Rana', 'Mostafa', 'Female', '11 years as Admin', 'Admin', '1234567801', 'rana.mostafa@example.com', 'password123', NULL),
+('Ziad', 'Nabil', 'Male', '3 years as Trainer', 'Trainer', '1234567802', 'ziad.nabil@example.com', 'password123', 9),
+('Mona', 'Adham', 'Female', '2 years as Worker', 'Worker', '1234567803', 'mona.adham@example.com', 'password123', 10),
+('Hadi', 'El-Shamy', 'Male', '1 year as Worker', 'Worker', '1234567804', 'hadi.elshamy@example.com', 'password123', 10),
+('Salma', 'Nader', 'Female', '4 years as Worker', 'Worker', '1234567805', 'salma.nader@example.com', 'password123', 10),
+('Yasser', 'Fouad', 'Male', '6 years as Admin', 'Admin', '1234567806', 'yasser.fouad@example.com', 'password123', NULL),
+('Mariam', 'Sami', 'Female', '7 years as Admin', 'Admin', '1234567807', 'mariam.sami@example.com', 'password123', NULL),
+('Kareem', 'Lotfy', 'Male', '8 years as Admin', 'Admin', '1234567808', 'kareem.lotfy@example.com', 'password123', NULL),
+('Hana', 'Atef', 'Female', '5 years as Trainer', 'Trainer', '1234567809', 'hana.atef@example.com', 'password123', 9);
 
--- Insert into User
-INSERT INTO "User" ( FirstName, LastName, Gender, Experience, Role, Phone, Email,Password, AdminID) VALUES
-('Mohammed', 'Abdelaziem', 'Male', '10 years in Gym Management', 'Admin', '1231231234', 'Mohammed@example.com','admin1', NULL),
-('Osama', 'Elnaggar', 'Male', '15 years in Gym Management', 'Admin', '1231231444', 'Osama@example.com','admin2', NULL),
-('Dwight', 'Schrute', 'Male', '5 years as Trainer', 'Trainer', '2342342345', 'dwight@example.com','trainer1', 1),
-('Pam', 'Beesly', 'Female', '2 years as Trainer', 'Trainer', '3453453456', 'pam@example.com','trainer2', 1);
 
--- Insert into Payments
-INSERT INTO Payments ( Amount, Date, GymMemberID, UserID) VALUES
-( 50.00, '2024-01-15', 1, 2),
-(100.00, '2024-01-20', 2, 2),
-(75.00, '2024-01-25', 3, 3);
+-- Add 20 tuples to GymMember table
+INSERT INTO GymMember (UserName, Password, BirthDate, Gender, Phone, Email, PaymentHistory, PlanFinishData, Points) VALUES
+('User1', 'pass1', '1990-01-01', 'Male', '0111111111', 'user1@example.com', 'Monthly Payment', '2024-12-31', 0),
+('User2', 'pass2', '1991-02-02', 'Female', '0111111112', 'user2@example.com', 'Monthly Payment', '2024-12-31', 0),
+('User3', 'pass3', '1992-03-03', 'Male', '0111111113', 'user3@example.com', 'Monthly Payment', '2024-12-31', 0),
+('User4', 'pass4', '1993-04-04', 'Female', '0111111114', 'user4@example.com', 'Monthly Payment', '2024-12-31', 0),
+('User5', 'pass5', '1994-05-05', 'Male', '0111111115', 'user5@example.com', 'Monthly Payment', '2024-12-31', 0),
+('User6', 'pass6', '1995-06-06', 'Female', '0111111116', 'user6@example.com', 'Monthly Payment', '2024-12-31', 0),
+('User7', 'pass7', '1996-07-07', 'Male', '0111111117', 'user7@example.com', 'Monthly Payment', '2024-12-31', 0),
+('User8', 'pass8', '1997-08-08', 'Female', '0111111118', 'user8@example.com', 'Monthly Payment', '2024-12-31', 0),
+('User9', 'pass9', '1998-09-09', 'Male', '0111111119', 'user9@example.com', 'Monthly Payment', '2024-12-31', 0),
+('User10', 'pass10', '1999-10-10', 'Female', '0111111120', 'user10@example.com', 'Monthly Payment', '2024-12-31', 0),
+('User11', 'pass11', '1989-11-11', 'Male', '0111111121', 'user11@example.com', 'Yearly Payment', '2024-12-31', 0),
+('User12', 'pass12', '1988-12-12', 'Female', '0111111122', 'user12@example.com', 'Yearly Payment', '2024-12-31', 0),
+('User13', 'pass13', '1987-01-13', 'Male', '0111111123', 'user13@example.com', 'Yearly Payment', '2024-12-31', 0),
+('User14', 'pass14', '1986-02-14', 'Female', '0111111124', 'user14@example.com', 'Yearly Payment', '2024-12-31', 0),
+('User15', 'pass15', '1985-03-15', 'Male', '0111111125', 'user15@example.com', 'Yearly Payment', '2024-12-31', 0),
+('User16', 'pass16', '1984-04-16', 'Female', '0111111126', 'user16@example.com', 'Yearly Payment', '2024-12-31', 0),
+('User17', 'pass17', '1983-05-17', 'Male', '0111111127', 'user17@example.com', 'Yearly Payment', '2024-12-31', 0),
+('User18', 'pass18', '1982-06-18', 'Female', '0111111128', 'user18@example.com', 'Yearly Payment', '2024-12-31', 0),
+('User19', 'pass19', '1981-07-19', 'Male', '0111111129', 'user19@example.com', 'Yearly Payment', '2024-12-31', 0),
+('User20', 'pass20', '1980-08-20', 'Female', '0111111130', 'user20@example.com', 'Yearly Payment', '2024-12-31', 0);
 
--- Insert into Class
-INSERT INTO Class (Name, Capacity, Duration, Schedule, UserID) VALUES
-( 'Yoga', 20, '01:00:00', 'MWF 7AM-8AM', 2),
-('Cardio', 15, '00:45:00', 'TTh 6PM-6:45PM', 3);
+-- Add 20 tuples to Payments table
+INSERT INTO Payments (Amount, Date, GymMemberID, UserID) VALUES
+(100.00, '2024-01-01', 1, 9),
+(200.00, '2024-01-02', 2, 9),
+(300.00, '2024-01-03', 3, 9),
+(400.00, '2024-01-04', 4, 9);
+
+INSERT INTO Class (Name, Capacity, Duration, Schedule, UserID, Price) VALUES
+('Yoga', 20, '01:00:00', 'MWF 7AM-8AM', 2, 0),
+('Cardio', 15, '00:45:00', 'TTh 6PM-6:45PM', 3, 0);
 
 -- Insert into Feedback
 INSERT INTO Feedback (Comments, Date, TrainerID, GymMemberID) VALUES
@@ -210,9 +247,9 @@ INSERT INTO Feedback (Comments, Date, TrainerID, GymMemberID) VALUES
 ('Loved the trainer’s tips!', '2024-01-23', 3, 2);
 
 -- Insert into WorkoutPlan
-INSERT INTO WorkoutPlan (Description, Goals, Duration, TrainerID) VALUES
-('Basic Weight Loss Plan', 'Lose 5kg in 3 months', '00:30:00', 2),
-('Strength Training Plan', 'Build muscle', '01:00:00', 3);
+INSERT INTO WorkoutPlan (Description, Goals, Duration, TrainerID,Price) VALUES
+('Basic Weight Loss Plan', 'Lose 5kg in 3 months', '00:30:00', 2,0),
+('Strength Training Plan', 'Build muscle', '01:00:00', 3,0);
 
 -- Insert into RegisterWorkoutPlan
 INSERT INTO RegisterWorkoutPlan (PlanID, MemberID, Date) VALUES

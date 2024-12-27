@@ -71,8 +71,43 @@ namespace DBapplication
             return x;
         }
 
+        public int AddGymMember(string FirstName, string LastName, string Gender, string Phone, string Email, string Password, string PaymentHistory, DateTime? BirthDate, DateTime? PlanFinishDate)
+        {
+            string query = $"INSERT INTO GymMember (UserName, Password, Gender, Phone, Email, PaymentHistory, BirthDate, PlanFinishData, Points)  " +
+                           $"VALUES ('{FirstName}', '{Password}', '{Gender}', '{Phone}', '{Email}', 'Nothing' , '{BirthDate}', null , 0);";
+            int rowsAffected = dbMan.ExecuteNonQuery(query);
 
+            return rowsAffected;
+        }
+        public int DeleteGymMember(int MemberID)
+        {
+            string query = $"DELETE FROM GymMember WHERE ID = {MemberID}";
+            int rowsAffected = dbMan.ExecuteNonQuery(query);
+            return rowsAffected;
+           
+        }
+        public DataTable ShowMember(string Email, string Pass)
+        {
 
+            string query = $"SELECT * FROM GymMember WHERE Email = '{Email}' AND Password = '{Pass}' ";
+
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable ShowAllMembers()
+        {
+
+            string query = $"SELECT * FROM GymMember";
+
+            return dbMan.ExecuteReader(query);
+        }
+
+        public DataTable SearchmemberByname(string Username)
+        {
+
+            string query = $"SELECT * FROM GymMember WHERE UserName LIKE '%{Username}%'; ";
+
+            return dbMan.ExecuteReader(query);
+        }
     }
 }
 

@@ -66,3 +66,26 @@ C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\D
 C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.FeedBack.resources
 C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.BookCLass.resources
 C:\Users\gamin\source\repos\DSA project\GymDataBase\Code\DBapplication\obj\x86\Debug\DBapplication.AttendsClass.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\bin\Debug\DBapplication.exe.config
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\bin\Debug\DBapplication.exe
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\bin\Debug\DBapplication.pdb
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.csproj.AssemblyReference.cache
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.AttendsClass.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.BookCLass.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.FeedBack.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.GymMember.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.GymTrainerSignup.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.LogWorkout.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.MemberPayments.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.Properties.Resources.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.SignUp.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.Welcome.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.csproj.GenerateResource.cache
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.exe
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.pdb
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.AddMember.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.User.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.DeleteMember.resources
+C:\Users\dell\Desktop\GymDataBaseFinal\Code\DBapplication\obj\x86\Debug\DBapplication.PlansandClassesForm.resources
